@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 95vw;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin: 80px auto;
+}
+
+img:not(.logo) {
+    width: 100%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-heading {
+    color: #1A6AA2;
+    font-size: 28px;
+    letter-spacing: 0.25rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.info-sub-heading {
+    color: #102A42;
+    margin: 12px 0;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.25rem;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+p {
+    color: #829AB0;
+    line-height: 1.5;
+    margin: 32px 0;
+}
+
+.countdown {
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px 1fr;
+    gap: 1rem;
+}
+
+.btn {
+    height: 80px;
+    background-color: #102A42;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.25rem;
+}
+
+.day, .hour, .minute, .second {
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+.time {
+    font-size: 13.6px;
+    text-transform: uppercase;
+    grid-template-rows: 80px 80px 80px 80px 1fr;
+    
+}
+
+@media only screen and (max-width: 990px) {
+    .container {
+        grid-template-columns: none;
+    }
+}
